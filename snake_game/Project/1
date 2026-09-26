@@ -1,0 +1,19 @@
+#ifndef UART_H
+#define UART_H
+#include "ti_msp_dl_config.h"
+#include <stdint.h>
+#include <stdbool.h>
+
+#define UART_RX_BUF_SIZE 64
+#define UART_TX_BUF_SIZE 128
+
+extern uint8_t g_uart_rx_buf[UART_RX_BUF_SIZE];
+extern uint8_t g_uart_rx_len;
+extern bool g_uart_rx_done;
+
+void UART_Init(void);
+void UART_Send_String(char *str);
+void UART_Game_Report(void);
+void UART_Command_Parse(void);
+
+#endif

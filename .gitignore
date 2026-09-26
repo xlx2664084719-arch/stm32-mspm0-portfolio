@@ -1,0 +1,14 @@
+# 编译产物
+Output/
+Listings/
+*.o
+*.d
+*.crf
+*.dep
+*.axf
+*.hex
+*.map
+*.lnp
+*.uvguix.*
+*.bak
+*副本*
